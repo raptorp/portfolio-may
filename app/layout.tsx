@@ -4,6 +4,8 @@ import "./globals.css";
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
 
+import Hero from "./components/hero";
+
 import { source_sans_pro } from "./fonts";
 import { lora } from "./fonts";
 
@@ -36,10 +38,8 @@ export default function RootLayout({
         lg:mx-24
         "
         >
-          <header>
-            <NavBar></NavBar>
-          </header>
-
+          <header>{/* <NavBar></NavBar> */}</header>
+          <Hero></Hero>
           {children}
         </div>
 
