@@ -5,7 +5,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState("transparent");
-  const [textColor, setTextColor] = useState("white");
+  const [textColor, setTextColor] = useState("#f4f4f5");
 
   const handleNav = () => {
     setNav(!nav);
@@ -14,11 +14,11 @@ const Navbar = () => {
   useEffect(() => {
     const changeColor = () => {
       if (window.scrollY >= 90) {
-        setColor("#ffffff");
-        setTextColor("#000000");
+        setColor("#f4f4f5");
+        setTextColor("#18181B");
       } else {
         setColor("transparent");
-        setTextColor("#ffffff");
+        setTextColor("#f4f4f5");
       }
     };
     window.addEventListener("scroll", changeColor);
