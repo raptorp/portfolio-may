@@ -24,7 +24,7 @@ const ProjectSection = () => {
           Experience the culmination of our shared passion for music, art, and webdesign through the links below. 
         "
           tags={["#UI/UX", "#HTML5", "#CSS", "#JavaScript", "#database"]}
-          websiteLink="https://sabrinaos.dk/2nd-semester/kunefestival_2.0/"
+          websiteLink="https://kunefestival.vercel.app/"
           prototypeLink="https://www.figma.com/proto/B3MxMe0sAkCPaI6t7aliEE/kune-prototype?page-id=424%3A2&type=design&node-id=604-597&viewport=-1574%2C2508%2C0.21&scaling=min-zoom&starting-point-node-id=604%3A597&show-proto-sidebar=1"
           githubLink="https://github.com/raptorp/kunefestival_2.0/"
           clientLink="https://www.kunekbh.com/"
@@ -47,7 +47,7 @@ const ProjectSection = () => {
           Explore the magic of this project by following the links below!
     "
           tags={["#HTML5", "#CSS", "#JavaScript", "#Json"]}
-          websiteLink="https://sabrinaos.dk/3rd-semester/hacked_hogwarts_database_ui/"
+          websiteLink="https://hogwarts-admin.vercel.app/"
           prototypeLink=""
           githubLink="https://github.com/raptorp/hacked_hogwarts_database_ui"
           clientLink=""
@@ -102,7 +102,7 @@ const ProjectSection = () => {
             "#CSS",
             "#JavaScript",
           ]}
-          websiteLink="https://sabrinaos.dk/1st-semester/fat-rat-game/"
+          websiteLink="https://fat-rat-game.vercel.app/"
           prototypeLink=""
           githubLink="https://github.com/raptorp/fat-rat-game"
           clientLink=""
