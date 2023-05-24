@@ -1,94 +1,112 @@
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
-const NavBar = () => {
-  const [isSticky, setIsSticky] = useState(false);
+const Navbar = () => {
+  const [nav, setNav] = useState(false);
+  const [color, setColor] = useState("transparent");
+  const [textColor, setTextColor] = useState("white");
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
 
   useEffect(() => {
-    const handleScroll = () => {
-      const offset = window.scrollY;
-      if (offset > 700) {
-        setIsSticky(true);
+    const changeColor = () => {
+      if (window.scrollY >= 90) {
+        setColor("#ffffff");
+        setTextColor("#000000");
       } else {
-        setIsSticky(false);
+        setColor("transparent");
+        setTextColor("#ffffff");
       }
     };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    window.addEventListener("scroll", changeColor);
   }, []);
 
+  useEffect(() => {
+    if (nav) {
+      document.body.style.overflow = "hidden"; // Prevent scrolling when mobile nav is open
+    } else {
+      document.body.style.overflow = "auto"; // Restore scrolling when mobile nav is closed
+    }
+  }, [nav]);
+
   return (
-    <nav
-      className={`fixed inset-x-0 top-0 z-50 ${
-        isSticky ? "bg-gray-900 text-gray-200 bg-opacity-95" : ""
-      }`}
+    <div
+      style={{ backgroundColor: `${color}` }}
+      className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
     >
-      <div className="py-16 px-24">
-        <div className="flex justify-between">
-          {/* logo */}
+      <div className="max-w-[1540px] m-auto flex justify-between items-center p-4 sm:py-8 text-white text-xl lg:text-2xl">
+        <Link href="/">
+          <h1 style={{ color: `${textColor}` }} className=" ">
+            <span className="font-bold">SABRINA</span> SØRENSEN
+          </h1>
+        </Link>
+        <ul
+          style={{ color: `${textColor}` }}
+          className="hidden sm:flex  font-medium space-x-24"
+        >
+          <li className="">
+            <Link href="/work">Work</Link>
+          </li>
+          <li className="">
+            <Link href="/#about">#About</Link>
+          </li>
+          <li className="">
+            <Link href="/contact">Contact</Link>
+          </li>
+        </ul>
 
-          <div>
-            <a className="text-2xl" href="/">
-              <h4 className="text-2xl text-center ">
-                <span className="font-bold">SABRINA</span> SØRENSEN
-              </h4>
-            </a>
-          </div>
+        {/* mobile button */}
 
-          {/* secondary nav */}
+        <div onClick={handleNav} className="block sm:hidden z-10">
+          {nav ? (
+            <AiOutlineClose size={20} style={{ color: `${textColor}` }} />
+          ) : (
+            <AiOutlineMenu size={20} style={{ color: `${textColor}` }} />
+          )}
+        </div>
 
-          <div className="hidden md:flex items-center space-x-1 text-xl">
-            <a href="#projects" className="px-3">
-              #Projects
-            </a>
-            <a href="/about" className="px-3">
-              #About
-            </a>
-            <a href="#contact" className="">
-              #Contact
-            </a>
-          </div>
+        {/* mobile menu */}
 
-          {/* mobile button goes here */}
-
-          <div className="md:hidden flex items-center">
-            <button className="mobile-menu-button">
-              <svg
-                className="w-6 h-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
-          </div>
+        <div
+          className={
+            nav
+              ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
+              : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300"
+          }
+        >
+          <ul style={{ color: `${textColor}` }}>
+            <li
+              onClick={handleNav}
+              className="p-4 text-3xl hover:text-gray-500"
+            >
+              <Link href="/">Home</Link>
+            </li>
+            <li
+              onClick={handleNav}
+              className="p-4 text-3xl hover:text-gray-500"
+            >
+              <Link href="/work">Work</Link>
+            </li>
+            <li
+              onClick={handleNav}
+              className="p-4 text-3xl hover:text-gray-500"
+            >
+              <Link href="/#gallery">About</Link>
+            </li>
+            <li
+              onClick={handleNav}
+              className="p-4 text-3xl hover:text-gray-500"
+            >
+              <Link href="/contact">Contact</Link>
+            </li>
+          </ul>
         </div>
       </div>
-
-      {/* mobile menu */}
-      <div className="mobile-menu hidden md:hidden">
-        <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
-          #Projects
-        </a>
-        <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
-          #About
-        </a>
-        <a href="#" className="block py-2 px-4 text-sm hover:bg-gray-200">
-          #Contact
-        </a>
-      </div>
-    </nav>
+    </div>
   );
 };
 
-export default NavBar;
+export default Navbar;

@@ -1,11 +1,13 @@
 "use client";
 
 import "./globals.css";
-import NavBar from "./components/navbar";
-import Footer from "./components/footer";
+
+import { PageWrapper } from "./page-wrapper";
 
 import { source_sans_pro } from "./fonts";
 import { lora } from "./fonts";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 export const metadata = {
   title: "Portfolio 2023",
@@ -20,31 +22,17 @@ export default function RootLayout({
   return (
     <html lang="en" className={source_sans_pro.className}>
       <head></head>
-      {/* add global styling here */}
 
-      <body
-        className="
-      min-h-screen
-      bg-green-600
-      bg-opacity-40
-      text-gray-900
-      "
-      >
-        <div
-          className="
-        mx-24 
-        lg:mx-24
-        "
-        >
+      <body className="">
+        <div className="">
           <header>
-            <NavBar></NavBar>
+            <Navbar />
           </header>
-
-          {children}
+          <PageWrapper>{children}</PageWrapper>
         </div>
 
-        <footer>
-          <Footer></Footer>
+        <footer className="">
+          <Footer />
         </footer>
       </body>
     </html>
