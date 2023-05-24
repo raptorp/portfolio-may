@@ -11,7 +11,7 @@ const ContactInfo = () => {
         Let&apos;s talk!
       </h1> */}
 
-      <div className="flex flex-col py-8 md:py-16  md:flex-row text-center  bg-emerald-950/20 md:justify-center md:justify-evenly">
+      <div className="flex flex-col py-8 md:py-16  md:flex-row text-center  bg-emerald-950/20 md:justify-evenly">
         <div className="flex flex-col p-4 space-y-2">
           <h1 className="text-2xl font-semibold lg:text-3xl xl:text-4xl  text-amber-800/70">
             Find me on LinkedIn
