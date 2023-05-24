@@ -1,5 +1,3 @@
-"use client";
-
 import kuneThumb from "/public/kune.png";
 import hogwartsThumb from "/public/aula.png";
 import gameThumb from "/public/game.png";

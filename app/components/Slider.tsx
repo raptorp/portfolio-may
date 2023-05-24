@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState } from "react";
 import { SliderData } from "./SliderData";
 import Image from "next/image";
