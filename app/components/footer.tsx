@@ -1,10 +1,5 @@
 import { FaGithub, FaLinkedinIn, FaArrowUp } from "react-icons/fa";
-
-// import { useEffect } from "react";
-import Link from "next/link";
 import LinkedButton from "./LinkedButton";
-
-// import { lora } from "../fonts";
 
 const Footer = () => {
   return (

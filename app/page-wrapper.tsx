@@ -2,8 +2,9 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 
-export const PageWrapper = ({ children }) => (
-  <>
+export const PageWrapper = (content: { children: any }) => {
+  const { children } = content;
+  return (
     <AnimatePresence>
       <motion.div
         initial={{ opacity: 0, y: 15 }}
@@ -14,5 +15,5 @@ export const PageWrapper = ({ children }) => (
         {children}
       </motion.div>
     </AnimatePresence>
-  </>
-);
+  );
+};

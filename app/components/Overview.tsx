@@ -1,10 +1,8 @@
 import React from "react";
-
 import kuneThumb from "/public/kune.png";
 import hogwartsThumb from "/public/aula.png";
 import cartelThumb from "/public/cartel.png";
 import gameThumb from "/public/game.png";
-
 import OverviewImg from "./OverviewImg";
 
 const Overview = () => {

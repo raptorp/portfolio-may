@@ -1,7 +1,5 @@
 import React from "react";
-
 import Image from "next/image";
-
 import { SlArrowDownCircle } from "react-icons/sl";
 import Link from "next/link";
 

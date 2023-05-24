@@ -1,11 +1,8 @@
 "use client";
-
 import "./globals.css";
 
 import { PageWrapper } from "./page-wrapper";
-
 import { source_sans_pro } from "./fonts";
-import { lora } from "./fonts";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 

@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 
 const HeroMinimal = (heroContent: { heading: string; message: string }) => {
   const { heading, message } = heroContent;

@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-
 import profilePic from "/public/headshot-bw.png";
 
 const AboutSection = () => {

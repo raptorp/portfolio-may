@@ -1,17 +1,7 @@
-"use client";
-
-import Portfolio from "./components/Portfolio";
-
 import Hero from "./components/hero";
-
 import TechStack from "./components/TechStack";
 import Skills from "./components/Skills";
-import Contact from "./contact/page";
-import ContactInfo from "./components/ContactInfo";
-import ProjectSection from "./components/ProjectSection";
 import AboutSection from "./components/AboutSection";
-import MyProcess from "./components/MyProcess";
-import HeroMinimal from "./components/heroMinimal";
 
 export default function Home() {
   return (

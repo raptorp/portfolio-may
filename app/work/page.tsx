@@ -1,10 +1,6 @@
-"use client";
-
 import React from "react";
 import Hero from "../components/hero";
-
 import ProjectSection from "../components/ProjectSection";
-import Overview from "../components/Overview";
 
 const Work = () => {
   return (
