@@ -10,12 +10,14 @@ const Footer = () => {
       flex-col
       border-t-2 
       border-solid 
-      border-black 
+     light:border-black 
       border-opacity-50
+      dark:border-black 
       py-12
       px-4
       space-y-28
-      text-gray-900
+      ligth:text-gray-900
+      dark:text-gray-900
      
       "
     >

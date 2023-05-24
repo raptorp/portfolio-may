@@ -22,7 +22,13 @@ export default function RootLayout({
     <html lang="en" className={source_sans_pro.className}>
       <head></head>
 
-      <body className="">
+      <body
+        className="
+          light:bg-gray-100 
+          dark:bg-gray-100 
+          ligth:text-gray-900
+        dark:text-gray-900"
+      >
         <div className="">
           <header>
             <Navbar />
