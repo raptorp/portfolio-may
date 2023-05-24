@@ -1,15 +1,7 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
-import {
-  GitHub,
-  Figma,
-  ArrowUp,
-  Youtube,
-  Film,
-  Link2,
-  Users,
-} from "react-feather";
+import { GitHub, Figma, Youtube, Link2, Users } from "react-feather";
 
 export const SectionComponent = (projectInfo: {
   imageSrc: any;
