@@ -10,7 +10,7 @@ const Work = () => {
   return (
     <div>
       <Hero
-        heading="Want to see something cool?"
+        heading="Explore My Portfolio"
         message="Below, you can find a selection of my favorite projects, ranging from pure JavaScript projects to a complete revamp of clients' digital presence."
       />
 

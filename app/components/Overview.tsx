@@ -6,7 +6,6 @@ import cartelThumb from "/public/cartel.png";
 import gameThumb from "/public/game.png";
 
 import OverviewImg from "./OverviewImg";
-import { Link } from "react-feather";
 
 const Overview = () => {
   return (

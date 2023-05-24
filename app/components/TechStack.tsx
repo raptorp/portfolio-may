@@ -15,8 +15,10 @@ import {
 
 const TechStack = () => {
   return (
-    <div className="max-w-[1240px] mx-auto text-center py-24">
-      <h1 className="text-3xl">TECH STACK</h1>
+    <div className="max-w-[1240px] mx-auto text-center pb-16 pt-8 xl:mb-36 xl:mt-10">
+      <h1 className="text-3xl sm:text-3xl lg:text-5xl xl:text-6xl  pb-0.5 xl:pb-10">
+        TECH STACK
+      </h1>
 
       <ul className="flex flex-wrap p-4 justify-center">
         <li className="p-4">

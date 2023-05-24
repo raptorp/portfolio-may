@@ -36,15 +36,12 @@ const ProjectData = (projectInfo: {
   } = projectInfo;
 
   return (
-    <div className="sm:grid lg:col-span-7 xl:col-span-7">
+    <div className="sm:grid lg:col-span-7 xl:col-span-7 lg:max-w-[800px]">
       <div className="px-4  py-6 lg:py-0 ">
-        <h1
-          className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl  pb-0.5"
-          style={{ fontFamily: "lora" }}
-        >
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-3xl  pb-0.5">
           {title}
         </h1>
-        <p className="text-xl sm:text-2xl lg:text-xl">{description}</p>
+        <p className="text-xl sm:text-l lg:text-l">{description}</p>
         <ul className="flex flex-wrap pt-2">
           {tags.map((tag, index) => (
             <li className="pr-2" key={index}>
@@ -101,7 +98,7 @@ const ProjectData = (projectInfo: {
             <LinkedButton
               btnLink={youtubeLink}
               btnIcon={<FaYoutube size={24} />}
-              btnText="YouTube"
+              btnText="Watch"
             />
           </li>
         )}

@@ -13,8 +13,10 @@ import {
 const Skills = () => {
   return (
     <div>
-      <div className="max-w-[1240px] mx-auto text-center py-24">
-        <h1 className="text-3xl">SKILLS</h1>
+      <div className="max-w-[1240px] mx-auto text-center pt-16 pb-8 xl:mt-32 xl:mb-10">
+        <h1 className=" text-3xl sm:text-3xl lg:text-5xl xl:text-6xl  pb-0.5 xl:pb-10">
+          SKILL STACK
+        </h1>
 
         <ul className="flex flex-wrap p-4 justify-center">
           <li className="p-4">

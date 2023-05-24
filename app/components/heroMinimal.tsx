@@ -1,14 +1,10 @@
 // import React from "react";
 
-const Hero = (heroContent: { heading: string; message: string }) => {
+const HeroMinimal = (heroContent: { heading: string; message: string }) => {
   const { heading, message } = heroContent;
 
   return (
-    <div
-      className={
-        "flex items-center justify-center h-[80vh] mb-12 bg-fixed bg-center bg-cover custom-img"
-      }
-    >
+    <div className="flex items-center justify-center h-[80vh] mb-12 bg-fixed bg-center bg-cover ">
       {/* overlay */}
 
       <div className="absolute top-0 left-0 right-0 bottom-[20vh] bg-black/70 z-[2]" />
@@ -20,4 +16,4 @@ const Hero = (heroContent: { heading: string; message: string }) => {
   );
 };
 
-export default Hero;
+export default HeroMinimal;

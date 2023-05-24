@@ -6,8 +6,8 @@ import { PageWrapper } from "./page-wrapper";
 
 import { source_sans_pro } from "./fonts";
 import { lora } from "./fonts";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 
 export const metadata = {
   title: "Portfolio 2023",

@@ -11,13 +11,13 @@ const ContactInfo = () => {
         Let&apos;s talk!
       </h1> */}
 
-      <div className="flex flex-col py-8 md:py-16  md:flex-row text-center border-y-2 border-emerald-900/50 md:justify-center md:justify-evenly">
+      <div className="flex flex-col py-8 md:py-16  md:flex-row text-center  bg-emerald-950/20 md:justify-center md:justify-evenly">
         <div className="flex flex-col p-4 space-y-2">
-          <h1 className="text-2xl font-semibold lg:text-3xl xl:text-4xl text-amber-800/70">
+          <h1 className="text-2xl font-semibold lg:text-3xl xl:text-4xl  text-amber-800/70">
             Find me on LinkedIn
           </h1>
           <Link href="https://www.linkedin.com/in/sabrinaos/">
-            <p className="text-xl lg:text-2xl xl:text-3xl">/li/sabrinaos</p>
+            <p className="text-xl lg:text-2xl xl:text-3xl  ">/li/sabrinaos</p>
           </Link>
         </div>
         <div className="flex flex-col p-4 space-y-2">

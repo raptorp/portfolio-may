@@ -48,10 +48,10 @@ const Navbar = () => {
           className="hidden sm:flex  font-medium space-x-24"
         >
           <li className="">
-            <Link href="/projects">Projects</Link>
+            <Link href="/work">Work</Link>
           </li>
           <li className="">
-            <Link href="/#gallery">#About</Link>
+            <Link href="/#about">#About</Link>
           </li>
           <li className="">
             <Link href="/contact">Contact</Link>
@@ -88,7 +88,7 @@ const Navbar = () => {
               onClick={handleNav}
               className="p-4 text-3xl hover:text-gray-500"
             >
-              <Link href="/projects">Projects</Link>
+              <Link href="/work">Work</Link>
             </li>
             <li
               onClick={handleNav}
