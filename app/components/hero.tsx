@@ -12,7 +12,10 @@ const Hero = (heroContent: { heading: string; message: string }) => {
       {/* overlay */}
 
       <div className="absolute top-0 left-0 right-0 bottom-[20vh] bg-black/70 z-[2]" />
-      <div className="p-5 light:text-gray-100 dark:text-gray-100 z-[2] mt-[-1rem] md:max-w-[600px] lg:max-w-[800px]">
+      <div
+        className="p-5 text-gray-100 
+           z-[2] mt-[-1rem] md:max-w-[600px] lg:max-w-[800px]"
+      >
         <h2 className="text-5xl lg:text-8xl ">{heading}</h2>
         <p className="py-5 text-xl font-light lg:text-3xl">{message}</p>
       </div>
